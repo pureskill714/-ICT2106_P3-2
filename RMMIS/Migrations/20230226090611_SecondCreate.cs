@@ -10,13 +10,19 @@ namespace RMMIS.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "EstablishedDate",
+                table: "ServiceCentre",
+                newName: "ContactNumber");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "ContactNumber",
+                table: "ServiceCentre",
+                newName: "EstablishedDate");
         }
     }
 }

@@ -1,0 +1,31 @@
+﻿@model RMMIS.Models.ServiceCentreModel
+
+@{
+    ViewData["Title"] = "AddServiceCentre";
+}
+
+<h1>Add a new service centre</h1>
+
+<form action="" method="post">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" asp-for="Name" />
+    </div>
+    <br/>
+    <div class="form-group">
+        <label>Location Address</label>
+        <input type="text" asp-for="Address"/>
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Contact Number</label>
+        <input type="text" asp-for="ContactNumber" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Manager</label>
+        <input type="text" asp-for= "Manager"/>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

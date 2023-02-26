@@ -28,5 +28,26 @@ namespace RMMIS.Controllers
             {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
+
+        public IActionResult AddServiceCentre()
+        {
+            return View();
         }
+
+        public IActionResult ViewProjects()
+        {
+            return View();
+        }
+
+        public IActionResult ViewOrganization()
+        {
+            return View();
+        }
+
+        public IActionResult ViewNotification()
+        {
+            return View();
+        }
+
+    }
     }

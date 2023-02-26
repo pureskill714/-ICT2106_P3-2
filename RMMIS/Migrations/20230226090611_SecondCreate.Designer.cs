@@ -10,7 +10,7 @@ using RMMIS.Models;
 namespace RMMIS.Migrations
 {
     [DbContext(typeof(DemoContext))]
-    [Migration("20230226045122_SecondCreate")]
+    [Migration("20230226090611_SecondCreate")]
     partial class SecondCreate
     {
         /// <inheritdoc />
@@ -29,7 +29,7 @@ namespace RMMIS.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("EstablishedDate")
+                    b.Property<string>("ContactNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

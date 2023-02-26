@@ -26,7 +26,7 @@ namespace RMMIS.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("EstablishedDate")
+                    b.Property<string>("ContactNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
