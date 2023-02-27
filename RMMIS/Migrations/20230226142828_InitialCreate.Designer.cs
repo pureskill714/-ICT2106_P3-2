@@ -10,8 +10,8 @@ using RMMIS.Models;
 namespace RMMIS.Migrations
 {
     [DbContext(typeof(DemoContext))]
-    [Migration("20230226090611_SecondCreate")]
-    partial class SecondCreate
+    [Migration("20230226142828_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

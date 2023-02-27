@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RMMIS.Models;
 using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace RMMIS.Controllers
     {
@@ -34,6 +35,7 @@ namespace RMMIS.Controllers
             return View();
         }
 
+        
         public IActionResult ViewProjects()
         {
             return View();
@@ -49,5 +51,27 @@ namespace RMMIS.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult AddServiceCentre(ServiceCentreModel newServiceCentre)
+        {
+
+        try { 
+                using (var db = new DemoContext())
+                {
+
+                    db.Add(newServiceCentre);
+                    db.SaveChanges();
+
+                }
+            }
+        catch 
+            {
+                // Handle the SQL Exception 
+                Console.WriteLine("Unable to save to DB");
+            }
+            return View();
+        }
     }
-    }
+}
+    
+    

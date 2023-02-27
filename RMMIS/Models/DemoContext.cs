@@ -11,7 +11,7 @@ namespace RMMIS.Models
 			public DbSet<ServiceCentreModel> ServiceCentre { get; set; }
 
 			protected override void OnConfiguring(DbContextOptionsBuilder options)
-				=>options.UseSqlite(@"Data Source=C:\\Users\\rahee\\Desktop\\ICT2106_P3-2\\RMMIS\\RMMIS.db");
+				=>options.UseSqlite("Data Source=C:\\Users\\rahee\\Desktop\\ICT2106_P3-2\\RMMIS\\RMMIS.db");
 			
 
 

@@ -4,9 +4,18 @@
     ViewData["Title"] = "AddServiceCentre";
 }
 
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+
 <h1>Add a new service centre</h1>
 
-<form action="" method="post">
+<form action="/Home/AddServiceCentre" method="post">
     <div class="form-group">
         <label>Name</label>
         <input type="text" asp-for="Name" />
@@ -29,3 +38,54 @@
     <br />
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<h1>Service Centre</h1>
+
+<table style="width:100%">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+         <th>Address</th>
+        <th>Contact Number</th>
+        <th>Manager</th>
+        <th>Employees</th>
+        <th>Projects</th>
+    </tr>
+    <tr>
+        <td>1001</td>
+        <td>Bedok YouthAction</td>
+        <td>740 Bedok Reservoir Rd, #01-3165, Singapore 470740</td>
+        <td>67447173</td>
+        <td>Mr David Yeoh</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>Geylang YouthAction</td>
+        <td>1014 #07-198, Geylang East Ave 3, Singapore 389729</td>
+        <td>68293452</td>
+        <td>Mr Thomas Lee</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1003</td>
+        <td>Hougang YouthAction</td>
+        <td>38 Defu Lane 10, Singapore 539215</td>
+        <td>68447198</td>
+        <td>Ms Claudia Tan</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1004</td>
+        <td>Orchard YouthAction</td>
+        <td>402 Orchard Road, #08-06</td>
+        <td>65412870</td>
+        <td>Mr Thomas Tan</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+</body>

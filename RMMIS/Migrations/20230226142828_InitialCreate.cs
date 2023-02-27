@@ -14,14 +14,14 @@ namespace RMMIS.Migrations
                 name: "ServiceCentre",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: true)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
-                    Address = table.Column<string>(type: "TEXT", nullable: false),
-                    EstablishedDate = table.Column<string>(type: "TEXT", nullable: false),
-                    Manager = table.Column<string>(type: "TEXT", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Address = table.Column<string>(type: "TEXT", nullable: true),
+                    ContactNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    Manager = table.Column<string>(type: "TEXT", nullable: true),
                     NoOfProjects = table.Column<int>(type: "INTEGER", nullable: true),
-                    NoOfEmployees = table.Column<int>(type: "INTEGER", nullable: true),
+                    NoOfEmployees = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
