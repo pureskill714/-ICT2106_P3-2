@@ -2,4 +2,72 @@
     ViewData["Title"] = "ViewOrganization";
 }
 
-<h1>Organization Page</h1>
+<style>
+    .btn-group button {
+        background-color: #04AA6D; /* Green background */
+        border: 1px solid black; /* Green border */
+        color: white; /* White text */
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+        background-color: #3e8e41;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+
+<h1>Organization</h1>
+<!Doctype html>
+<html>
+
+<body>
+    <div class="btn-group">
+        <button>Employee</button>
+        <button>Donors</button>
+        <button>Volunteers</button>
+    </div>
+
+    <br>
+    <br>
+
+    <table style="width:100%">
+        <tr>
+            <th>EmployeeeId</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+            <th>Service Centre</th>
+        </tr>
+        <tr>
+            <td>87979</td>
+            <td>David</td>
+            <td>Tan</td>
+            <td>87512047</td>
+            <td>DavidTan@gmail.com</td>
+            <td>Bedok YouthAction</td>
+        </tr>
+    </table>
+</body>
+
+</body>
+</html>
+
