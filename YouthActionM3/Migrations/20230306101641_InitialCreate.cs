@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RMMIS.Migrations
+namespace YouthActionM3.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -14,14 +14,14 @@ namespace RMMIS.Migrations
                 name: "ServiceCentre",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: true)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Address = table.Column<string>(type: "TEXT", nullable: true),
-                    ContactNumber = table.Column<string>(type: "TEXT", nullable: true),
-                    Manager = table.Column<string>(type: "TEXT", nullable: true),
-                    NoOfProjects = table.Column<int>(type: "INTEGER", nullable: true),
-                    NoOfEmployees = table.Column<int>(type: "INTEGER", nullable: true)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Manager = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NoOfProjects = table.Column<int>(type: "int", nullable: false),
+                    NoOfEmployees = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
